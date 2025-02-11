@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  body {
+    padding: 2rem;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right bottom, #efb9bf, #fae1dd);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-img {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
+    position: relative;
+    top: -20px;
+  }
+  
+  .container {
+    flex: 1;
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  
+  .image-1,
+  .image-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%; /* Ensures they don't overflow */
+    max-height: 75vh; /* Ensures they fit within the screen */
+  }
+  .image-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image-1 {
+    width: 175px;
+  }
+  
+  .image-2 {
+    width: 250px;
+  }
+
+  image-3 {
+    width: 500px;
+    position: relative;
+    top: -20px;
+  }
+  
+  .btn {
+    position: absolute;
+    top: calc(100% - 5rem);
+    min-width: 120px;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+    outline: none;
+    border: none;
+    background-color: #f8fafc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f4bed7;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-yes {
+    left: 50%;
+    transform: translateX(calc(-100% - 1rem));
+    z-index: 1;
+  }
+  
+  .btn-no {
+    left: calc(50% + 1rem);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+
+
+  body, html {
+    height: 100vh;
+    overflow: hidden; /* Ensures no scrolling */
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    overflow: hidden;
+    transform: translateY(-50px); /* Moves everything up by 50px */
+  }
+  
+  .image-1,
+  .image-2,
+  .image-3 {
+    max-height: 75vh; /* Ensures it fits within the screen */
+  }
+  
+
+  
